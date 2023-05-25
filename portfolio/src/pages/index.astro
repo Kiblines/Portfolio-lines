@@ -30,8 +30,8 @@ const projects = (await getCollection('work'))
 		<div class="wrapper stack gap-8 lg:gap-20">
 			<header class="hero">
 				<Hero
-					title="Hello, my name is Anthony Lines"
-					tagline="I am a Creative Developer "
+					title="Hello, je m'appelle Anthony Lines"
+					tagline="Je suis un développeur front-end "
 					align="start"
 				>
 					<div class="roles">
@@ -59,17 +59,7 @@ const projects = (await getCollection('work'))
 					<p>Découvrez mes derniers projets, réalisés pour des clients ou pour moi-même</p>
 				</header>
 
-				<div class="gallery">
-					<Grid variant="offset">
-						{
-							projects.map((project) => (
-								<li>
-									<PortfolioPreview project={project} />
-								</li>
-							))
-						}
-					</Grid>
-				</div>
+				
 
 				<div class="cta">
 					<CallToAction href="/work/">
